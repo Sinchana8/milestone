@@ -87,7 +87,7 @@ cron.schedule('0 0 1 * *', () => {  // Every 1st day of the month at midnight
     return expenseDate.getMonth() === today.getMonth() && expenseDate.getFullYear() === today.getFullYear();
   }).reduce((sum, exp) => sum + exp.amount, 0);
 
-  console.log(`Monthly Expense Summary: $${monthlyTotal}`);
+  console.log(`Monthly Expense1 Summary: $${monthlyTotal}`);
 });
 
 // Start the server
